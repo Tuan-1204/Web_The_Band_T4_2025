@@ -4,5 +4,15 @@
     margin: 0;
     /* loại bỏ tính toán kích thước */
     box-sizing: border-box;
+    /* loại bỏ gạch chân của thẻ a */
+    text-decoration: none;
+   
+}
+
+html{
+    /* font chữ mặc định */
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+
 }
 

@@ -1,0 +1,58 @@
+/*
+1.Vị trí của thẻ
+2. kích thước (width, height)
+3. màu sắc
+4. Kiểu dáng ( font chữ, hình tròn, vuông)
+5. khoảng cách giữa các thẻ
+6. border
+7. background
+8. hiển thị
+*/
+
+#app{
+
+}
+
+#header{
+    height: 46px;
+    background-color: #000;
+}
+
+#nav{
+ 
+}
+
+#nav li{
+    /* cho thanh điều hướng hiển thị trên 1 hàng */
+    display: inline-block;
+}
+
+#nav li a{
+    color: #fff;
+    padding: 0 24px;
+    line-height: 46px;
+    display: inline-block;
+}
+
+/* hover menu chính */
+#nav li:hover a{
+    background-color: #ccc;
+    color: #fff;
+}
+/* ẩn menu cấp 2 */
+#nav .subnav{
+    display: none;
+}
+
+
+#slider{
+
+}
+
+#content{
+
+}
+
+#footer{
+
+}
