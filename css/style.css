@@ -18,35 +18,67 @@
     background-color: #000;
 }
 
-#nav{
- 
+#nav, .subnav{
+    /* bỏ dấu ở đầu lits ul, li */
+    list-style: none;
+}
+/* chỉ cho li ở cấp 1 bị tác động */
+#nav  > li {
+    display: inline-block;
 }
 
 #nav li{
     /* cho thanh điều hướng hiển thị trên 1 hàng */
-    display: inline-block;
+   
+    position: relative;
 }
+/* cấp 1 */
+ #nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+ }
 
 #nav li a{
-    color: #fff;
     padding: 0 24px;
     line-height: 46px;
-    display: inline-block;
+    display: block;
 }
 
-/* hover menu chính */
-#nav li:hover a{
+/* hover menu chính, menu cấp 2 */
+#nav .subnav li:hover a,
+#nav > li:hover > a{
     background-color: #ccc;
-    color: #fff;
+    color: #000;
 }
-/* ẩn menu cấp 2 */
+
+/* menu cấp 2 */
 #nav .subnav{
-    display: none;
+     display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /* chiều rộng tối thiểu */
+    min-width: 160px;
+    background-color: #fff;
+    /* tạo bóng đổ */
+    box-shadow:0 0 10px rgba(0,0,0,0.3); 
+}
+
+#nav .subnav a{
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+/* hover vào menu cấp 2 sẽ hiện */
+#nav li:hover .subnav{
+    display: block;
 }
 
 
 #slider{
-
+    
+ 
 }
 
 #content{
