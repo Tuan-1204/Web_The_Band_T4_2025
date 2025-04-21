@@ -18,6 +18,10 @@
     background-color: #000;
 }
 
+#nav{  
+    display: inline-block;
+}
+
 #nav, .subnav{
     /* bỏ dấu ở đầu lits ul, li */
     list-style: none;
@@ -74,7 +78,30 @@
 #nav li:hover .subnav{
     display: block;
 }
+/* nút trỏ xuống */
+.fa-solid{
+    font-size: 14px;
+    margin-left: 5px;
+    color: #fff;
+}
 
+/* nút tìm kiếm */
+#header .search-btn{
+    float: right;
+    line-height: 46px;
+    padding: 0 21px;
+}
+
+/* hover đổi màu */
+#header .search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
+   
+}
+#header .fa-solid  fa-magnifying-glass{
+    font-size: 20px;
+    color: #fff;
+}
 
 #slider{
     
