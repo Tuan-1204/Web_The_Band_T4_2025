@@ -317,7 +317,7 @@ margin-top: 15px;
     max-width: calc(100% - 32px);
     min-height: 200px;
     position: relative;
-
+    animation: modalFadeIn .5s ease-in-out;
 }
 
 .fa-solid{
@@ -401,4 +401,16 @@ margin-top: 15px;
 
 .modal-footer a{
     color:#2196F3 ;
+}
+
+/* code chuyển động cho modal mua hàng */
+@keyframes modalFadeIn {
+   from{
+    opacity: 0;
+    transform: translate(-140px);
+   }
+   to{
+    opacity: 1;
+    transform: translate(0);
+   }
 }
