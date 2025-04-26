@@ -68,7 +68,7 @@
                             <p class="member-name">Name</p>
                             <img src="./assets/images/name.jpg" alt="" class="member-img">
                         </div>
-                        <div class="clear"></div>
+                     
                     </div>
                 </div>
 
@@ -125,7 +125,32 @@
                     <div class="content-section contact">
                         <h2 class="section-heading">CONTACT</h2>
                         <p class="section-sub-heading">Fan? Drop a note!</p>
-                        <p class="about-text"></p>
+                        <div class="row contact-content">
+                            <div class="col col-half contact-info">
+                             <p><i class="fa-solid fa-map"></i>Phù Cừ, Hưng Yên </p>
+                             <p><i class="fa-solid fa-phone"></i>Phone: +84 989681864</p>
+                             <p><i class="fa-solid fa-envelope"></i>Email: Nganhtuan5847@gmail.com</p>
+                            </div>
+                            <div class="col col-half contact-form">
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col col-half">
+                                        <input type="text" name="" placeholder="Name" id="" required class="form-control">
+                                        </div>
+                                        <div class="col col-half">
+                                            <input type="text" name="" placeholder="Email" id="" required class="form-control">
+                                            </div>
+                                            
+                                    </div>
+                                    <div class="row mt-8">
+                                        <div class="col col-full">
+                                            <input type="text" name="" placeholder="Message" id="" required class="form-control">
+                                        </div>
+                                    </div>
+                                    <input type="submit" value="Send" class="form-submit-btn mt-16" >
+                                </form>
+                            </div>
+                        </div>
 
                     </div>
              </div>
@@ -178,39 +203,6 @@
      </div>
 
     <!-- link js -->
-     
-    <script>
-        /*
-          const buyBtns = document.querySelectorAll('.js-buy-ticket');
-        const modal = document.querySelector('.js-modal');
-        //hàm ẩn hiện ô mua hàng
-        const modalContainer = document.querySelector('.js-modal-container');
-        const modalClose = document.querySelector('.js-modal-close');
-    // ấn vào nút mua hàng thì hiện ô mua hàng
-        function showBuyTickets(){
-           modal.classList.add('open');
-        }
-        // ấn vào nút đóng thì ẩn ô mua hàng
-        function hideBuyTickets(){
-            modal.classList.remove('open');
-        }
-    // lắp qua từng thẻ và nghe hành vi click
-    for (const buyBtn of buyBtns) {
-           buyBtn.addEventListener('click', showBuyTickets);
-             
-        }
-        // nghe hành vi click vào nút đóng
-       modalClose.addEventListener('click',hideBuyTickets);
-
-       //click vào vùng ngoài ô mua hàng thì ẩn ô mua hàng
-       modal.addEventListener('click',hideBuyTickets);
-       modalContainer.addEventListener('click', function(event){
-        // ngăn chặn sự kiện click từ modalContainer truyền ra ngoài
-        event.stopPropagation();
-       });
-*/
-    </script>
-
     <script src="./javascript/main.js"></script>
 </body>
 </html>
