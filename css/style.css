@@ -20,6 +20,27 @@
 .text-center{
     text-align: center !important;
 }
+
+
+.pull-right{
+    float: right !important;
+}
+
+.btn{
+    color: #fff;
+    background-color: #f44336;
+    text-decoration: none;
+    padding: 11px 20px;
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 12px;
+}
+
+.btn:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
 .row{
 
     margin-left: -8px;
@@ -198,7 +219,7 @@
 
 #content .content-section{
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
     
@@ -281,7 +302,7 @@
 
 .places-list{
     margin-top: 32px;
-    margin-bottom: 48px;
+  
 }
 
 .place-img{
@@ -309,18 +330,8 @@
 margin-top: 15px;
     line-height: 1.4;
 }
-.place-buy-btn{
-    color: #fff;
-    background-color: #f44336;
-    text-decoration: none;
-    padding: 11px 20px;
-    display: inline-block;
-    margin-top: 15px;
-}
-.place-buy-btn:hover{
-    background-color: #000;
-    color: #fff;
-}
+
+
 
 /* contact */
 .contact-content{
@@ -355,10 +366,35 @@ margin-top: 15px;
     float: right;
 }
 
+/* map section
+ */
+ .map-section img{
+    width: 100%;
+ }
 #footer {
-
+    padding: 64px 16px;
+    text-align: center;
 }
 
+#footer .social-list{
+    font-size: 20px;
+     
+}
+
+#footer .social-list a{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .social-list a:hover{
+    color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+}
+
+#footer .coppyright{
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    margin-top: 15px;
+}
 
 /* ô mua hàng */
 .modal{
@@ -453,12 +489,14 @@ margin-top: 15px;
 /* nút mua */
 #buy-tickets{
     background: #009688;
-    border: none;
+    border:none;
     color: #fff;
     width: 100%;
     font-size: 15px;
     text-transform: uppercase;
     padding: 18px;
+    
+ 
 }
 
 #buy-tickets:hover{
