@@ -25,3 +25,34 @@ modalContainer.addEventListener('click', function(event){
 // ngăn chặn sự kiện click từ modalContainer truyền ra ngoài
 event.stopPropagation();
 });
+
+//xây dựng responsive menu
+// header
+var header = document.getElementById('header');
+// mobile menu
+var mobileMenu = document.getElementById('mobile-menu');
+// menu items
+var headerHeight = header.clientHeight;
+//đóng mở menu mobile
+mobileMenu.onclick = function() {
+   // kiểm tra xem header đóng hay mở
+   var isClosed = header.clientHeight === headerHeight;
+   //nếu đang đóng thì mở
+   if(isClosed){
+      header.style.height = 'auto';
+   }
+   // nếu đang mở thì đóng
+   else{
+      header.style.height = null;
+   }
+}
+
+//Tự động đóng menu khi click vào menu item
+var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+for(var i = 0; i < menuItems.length; i++){
+   var menuItem = menuItems[i];
+   menuItem.onclick = function(){
+      header.style.height = null;
+
+      }
+}
