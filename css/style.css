@@ -8,6 +8,11 @@
 7. background
 8. hiển thị
 */
+
+.app{
+    /* overflow: hidden; */
+
+}
 /* class chung */
 .clear{
     clear: both;
@@ -217,10 +222,12 @@
 
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
-    
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading{
