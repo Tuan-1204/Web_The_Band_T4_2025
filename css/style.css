@@ -76,7 +76,7 @@
     margin-top: 16px !important;
 }
 /* phần css chính */
-#app {}
+
 
 #header {
     position: fixed;
@@ -213,9 +213,7 @@
 }
 
 
-#content {
 
-}
 
 #content .content-section{
     width: 800px;

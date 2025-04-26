@@ -13,6 +13,6 @@ html{
     /* font chữ mặc định */
     font-size: 15px;
     font-family: 'Lato', sans-serif;
-
+    scroll-behavior: smooth;
 }
 
