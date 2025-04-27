@@ -172,7 +172,12 @@
     line-height: 46px;
     padding: 0 21px;
 }
-
+#header .mobile-menu-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
 
 /* hover đổi màu */
 
