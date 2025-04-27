@@ -51,8 +51,17 @@ mobileMenu.onclick = function() {
 var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
 for(var i = 0; i < menuItems.length; i++){
    var menuItem = menuItems[i];
-   menuItem.onclick = function(){
-      header.style.height = null;
 
+   // nếu là menu cha thì không thực hiện gì cả 
+   menuItem.onclick = function(event){
+      var isParentMenu = this.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnav');
+      if (isParentMenu){
+         event.preventDefault();
       }
+     else{
+         // nếu là menu con thì không thực hiện gì cả
+         header.style.height = null;
+      
+   }
+}
 }

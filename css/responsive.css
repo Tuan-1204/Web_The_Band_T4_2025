@@ -25,6 +25,25 @@
     display: block; /* cho menu chính hiển thị theo chiều dọc */
  }
 
+ #nav li a{
+    padding: 1px 24px; /* giảm khoảng cách giữa các menu */
+   
+ }
+ #nav .subnav{
+   position: initial; /* cho menu cấp 2 hiển thị theo chiều dọc */
+   background-color: #333; /* màu nền menu cấp 2 */
+ }
+
+ #nav .subnav a{
+   color: #fff;
+   padding: 5px 41px; /* khoảng cách giữa các menu cấp 2 */
+   line-height: 38px; /* chiều cao của menu cấp 2 */
+ }
+
+
+ #header {
+   overflow: hidden; /* ẩn menu chính */
+ }
  #header .mobile-menu-btn{
       display: block; /* hiển thị nút menu trên di động */
  }
